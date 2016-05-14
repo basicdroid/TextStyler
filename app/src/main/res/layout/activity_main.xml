@@ -10,8 +10,68 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.training.android.textstyler.MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/etText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="@string/enter_text"/>
+
+    <CheckBox
+        android:id="@+id/cbBold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etText"
+        android:text="@string/bold"/>
+
+    <CheckBox
+        android:id="@+id/cbItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etText"
+        android:layout_toEndOf="@+id/cbBold"
+        android:layout_toRightOf="@+id/cbBold"
+        android:text="@string/italic"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cbBold">
+
+        <RadioButton
+            android:id="@+id/rbRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red"/>
+
+        <RadioButton
+            android:id="@+id/rbGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/green"/>
+
+        <RadioButton
+            android:id="@+id/rbBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blue"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvStyledText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioGroup"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
 </RelativeLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Text Styler</string>
+    <string name="enter_text">Enter text</string>
+    <string name="bold">Bold</string>
+    <string name="italic">Italic</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
 </resources>
